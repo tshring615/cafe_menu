@@ -13,6 +13,7 @@
     --tag-color: #EEEEEE;
     --main-color: #F8F4EA;
     --margin-content: 0.5rem;
+    --mobile-price-color: antiquewhite;
 }
 
 html {
@@ -23,7 +24,7 @@ body {
     display: grid;
     place-items: center;
     background-color: var(--main-color);
-    margin: 1rem;
+    margin: 2rem;
     font-family:'Josefin Sans', sans-serif;
 }
 
@@ -31,7 +32,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     background-color: var(--list-color);
     margin-top: 0.5rem;
     padding: 1rem;
@@ -54,10 +54,28 @@ p {
     opacity: 60%;
 }
 
-#price-container {
-    display: flex;
-    justify-content: flex-end;
-    width: 150px;
+#price {
     margin-top: 0.5rem;
-    font-weight: bolder;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 530px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #price {
+        color: var(--mobile-price-color);
+        margin-top: 1rem;
+    }
+
+}
+
+.menu {
+    display: flex;
+}
+
+li {
+    display: block;
 }
