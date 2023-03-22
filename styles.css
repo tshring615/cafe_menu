@@ -1,0 +1,63 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rowdies:wght@700&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --list-color: #393E46;
+    --name-color: #F7F7F7;
+    --tag-color: #EEEEEE;
+    --main-color: #F8F4EA;
+    --margin-content: 0.5rem;
+}
+
+html {
+    font-size: 0.875rem;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--main-color);
+    margin: 1rem;
+    font-family:'Josefin Sans', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--list-color);
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+h2 {
+    color: var(--name-color);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+p {
+    color: var(--tag-color);
+}
+
+#tag {
+    margin-top: var(--margin-content);
+    margin-bottom: calc(var(--margin-content) + .5rem);
+    opacity: 60%;
+}
+
+#price-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+    margin-top: 0.5rem;
+    font-weight: bolder;
+}
